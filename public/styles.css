@@ -1,0 +1,36 @@
+body {
+    margin-left: 100px;
+    padding:20px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    margin-left: -40px;
+}
+
+svg {
+    margin-left: 10px;
+    height: 15px;
+    width: 15px;
+}
+
+span {
+    opacity: 0;
+    color: blue;
+    margin-left: 10px;
+}
+
+svg:hover + span {
+    display: inline;
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } 
+    to {
+        opacity: 1;
+    }
+}
